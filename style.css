@@ -1,0 +1,24 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/** COLORS **/
+
+.text-rered {
+  color: #FF224C;
+}
+
+.bg-red {
+  background-color: #FF224C;
+}
+
+.bg-pink {
+  background-color: #FFDCE2;
+}
+
+.pill-button {
+  height: 36px;
+  border-radius: 40px;
+  padding: .3rem 2rem;
+  text-decoration: none;
+}
