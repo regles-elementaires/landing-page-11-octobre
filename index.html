@@ -13,20 +13,81 @@
   </head>
   <body>
       
-    <header class="bg-red d-flex flex-wrap align-items-center">
+    <header class="bg-red d-flex flex-wrap align-items-end">
       <div class="col-md-7">
         <img src="./img/header.png" class="img-fluid" alt="douleurs, wc indapatés, honte, moqueries, angoisse, taches">
       </div>
-      <div class="col-md-4 px-4">
-        <img src="./img/tagline.png" class="img-fluid" alt="à l'école, changer les règles est un devoir">
+      <div class="col-md-4 px-4 text-center">
+        <img src="./img/tagline.png" class="img-fluid mb-4" alt="à l'école, changer les règles est un devoir">
+        <img src="./img/logo-re-blanc.png" class="width-60 mb-5" alt="logo Règles Élémentaires">
       </div>
     </header>
 
-    <div class="text-center fs-5 my-4">
+    <div class="text-center fs-5 my-5">
         <a class="bg-red pill-button text-white" href="" target="_blank">Je fais un don</a>
     </div>
 
-    <footer class="bg-pink text-rered text-center py-2">
+    <div class="container text-center fs-5">
+      <div class="row">
+
+        <div class="col-md-6 px-3 d-flex flex-column">
+
+          <div class="d-flex mb-2">            
+            <img class="img-fluid z-3 position-absolute" src="./img/cahier.png" alt="cahier ouvert">
+            <div class="col-md-10 offset-md-2 bg-purple d-flex flex-column text-white my-rounded py-4 px-5">
+                <span class="font-chango big-number" data-aos="zoom-in">80%</span>
+                <span>des jeunes filles ont leurs premières règles <span class="fw-bold">avant 13 ans</span></span>                    
+            </div>
+          </div>
+
+          <div class="col-md-11 offset-md-1 mt-4 d-flex flex-column text-red border-red my-rounded py-4 px-5">
+            <span>À cause de ces <span class="fw-bold">absences</span>, elles sont</span>
+            <span class="font-chango big-number">1/4</span>
+            <span>à déclarer que ça a freiné leur <span class="fw-bold">progression scolaire</span></span>
+          </div>
+          
+        </div>
+
+        <div class="col-md-6 px-3 d-flex flex-column">
+
+          <div class="col-md-12 border-purple d-flex flex-column text-purple my-rounded py-4 px-5 mb-2">
+            <span>Avoir ses règles à l'école est un facteur de</span>
+            <img class="mx-auto width-60" data-aos="flip-down" data-aos-delay="500" src="./img/stress.png" alt="stress">
+            <span>pour <span class="font-chango big-number">80%</span> des jeunes filles</span>
+          </div>
+
+          <div class="d-flex mt-4"> 
+            <div class="d-flex flex-column">
+              <img class="img-fluid z-3 position-absolute" data-aos="fade-left" data-aos-delay="1000" src="./img/red-arrow.png" alt="flèche pointant vers la gauche">
+              <img class="img-fluid z-3 position-absolute" data-aos="fade-left" data-aos-delay="1500" style="margin-top: 6rem;" src="./img/purple-arrow.png" alt="flèche pointant vers le bas">
+            </div>
+            <div class="col-md-7 offset-md-3  bg-red d-flex flex-column text-white my-rounded py-4 px-5">
+              <span class="font-chango big-number">53%</span>
+              <span>des filles de plus de 15 ans ont déjà manqué l'école à cause de leurs règles</span>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-8 offset-md-2 text-purple text-center">
+          Parmi elles, <span class="font-chango big-number">68%</span> sont absentes plusieurs fois
+        </div>
+        <div class="col-md-2">
+          <img class="img-fluid" src="./img/reveil.png" alt="réveil">
+        </div>        
+      </div>
+
+      <div class="text-center fs-5 mb-4">
+        <a class="bg-red pill-button text-white" href="" target="_blank">Je consulte l'étude complète</a>
+      </div>
+
+    </div>
+
+    <footer class="bg-pink text-red text-center py-2">
       Un site by
       <img class="ms-3 col-md-2" src="./img/logo-re.png" alt="logo Règles Élémentaires" />
     </footer>
@@ -35,7 +96,10 @@
     <script src="./dist/js/aos.js"></script>
 
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
     </script>
       
   </body>

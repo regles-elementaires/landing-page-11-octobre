@@ -1,10 +1,16 @@
+/** FONTS **/
+
 body {
   font-family: 'DM Sans', sans-serif;
 }
 
+.font-chango {
+  font-family: 'Chango', 'DM Sans', sans-serif;
+}
+
 /** COLORS **/
 
-.text-rered {
+.text-red {
   color: #FF224C;
 }
 
@@ -12,8 +18,38 @@ body {
   background-color: #FF224C;
 }
 
+.border-red {
+  border: 1px solid #FF224C;
+}
+
+.text-purple {
+  color: #9129FF;
+}
+
+.bg-purple {
+  background-color: #9129FF;
+}
+
+.border-purple {
+  border: 1px solid #9129FF;
+}
+
 .bg-pink {
   background-color: #FFDCE2;
+}
+
+/** GENERAL **/
+
+.width-60 {
+  width: 60%;
+}
+
+.big-number {
+  font-size: 50px;
+}
+
+.my-rounded {
+  border-radius: 20px;
 }
 
 .pill-button {
