@@ -8,6 +8,10 @@ body {
   font-family: 'Chango', 'DM Sans', sans-serif;
 }
 
+.font-fuzzy {
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
 /** COLORS **/
 
 .text-red {
@@ -34,8 +38,20 @@ body {
   border: 1px solid #9129FF;
 }
 
+.bg-light-purple {
+  background-color: #DCBAFC;
+}
+
 .bg-pink {
   background-color: #FFDCE2;
+}
+
+.bg-yellow {
+  background-color: #FFB800;
+}
+
+.text-yellow {
+  color: #FFB800;
 }
 
 /** GENERAL **/
@@ -57,4 +73,30 @@ body {
   border-radius: 40px;
   padding: .3rem 2rem;
   text-decoration: none;
+}
+
+.bg-white-stain {
+  background-image: url("./img/white-stain.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-96 {
+  font-size: 96px;
+}
+
+.rotate-5 {
+  transform: rotate(-5deg);
+}
+
+.rotate-2 {
+  transform: rotate(2deg);
 }
