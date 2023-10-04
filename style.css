@@ -56,8 +56,17 @@ body {
 
 /** GENERAL **/
 
+.mx-6 {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
 .width-60 {
   width: 60%;
+}
+
+.width-35 {
+  width: 35px;
 }
 
 .big-number {
@@ -69,28 +78,69 @@ body {
 }
 
 .pill-button {
-  height: 36px;
-  border-radius: 40px;
-  padding: .3rem 2rem;
+  display: inline-block;
+  border-radius: 100px;
+  padding: .5rem 2.5rem;
   text-decoration: none;
-}
-
-.bg-white-stain {
-  background-image: url("./img/white-stain.png");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-}
-
-.fs-26 {
   font-size: 26px;
 }
 
-.fs-40 {
-  font-size: 40px;
+@media (min-width: 768px) {
+  .bg-purple-stain {
+    background-image: url("./img/purple-stain.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  .fs-20 {
+    font-size: 20px;
+  }
+
+  .fs-24 {
+    font-size: 24px;
+  }
+
+  .fs-26 {
+    font-size: 26px;
+  }
+
+  .fs-40 {
+    font-size: 40px;
+  }
+
+  .video-container {
+    position: relative;
+    padding-top: 46.87%;
+    width: 83.33%;
+  }
+
+  .girl-img {
+    margin-left: -26%;
+  }
 }
 
-.fs-96 {
-  font-size: 96px;
+@media (max-width: 768px) {
+  .fs-20 {
+    font-size: 16px;
+  }
+
+  .fs-24 {
+    font-size: 18px;
+  }
+
+  .fs-26 {
+    font-size: 18px;
+  }
+
+  .fs-40 {
+    font-size: 28px;
+  }
+
+  .video-container {
+    position:relative;
+    padding-top:56.25%;
+    width:100%;
+  }
 }
 
 .rotate-5 {

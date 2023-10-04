@@ -4,17 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Landing page 11 octobre</title>
+    <title>Education menstruelle</title>
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./dist/css/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;800&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//matomo.regleselementaires.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '3']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
   </head>
   <body>
       
-    <header class="bg-red d-flex flex-wrap align-items-end">
+    <!-- desktop header -->
+    <header class="bg-red d-none d-md-flex flex-wrap align-items-end">
       <div class="col-md-7">
         <img src="./img/header.png" class="img-fluid" alt="jeune fille avec des mots écrits au dessus de sa tête : douleurs, wc indapatés, honte, moqueries, angoisse, taches">
       </div>
@@ -24,24 +42,47 @@
       </div>
     </header>
 
-    <div class="text-center fs-5 my-5">
+    <!-- mobile header -->
+    <header class="bg-red d-flex d-md-none flex-column flex-wrap align-items-center">
+      <div class="mx-6">
+        <img src="./img/logo-re-blanc.png" class=" img-fluid my-4" alt="logo Règles Élémentaires">
+      </div>
+      
+      <div class="mx-2">
+        <img src="./img/tagline-mobile.png" class="img-fluid mb-4" alt="à l'école, changer les règles est un devoir">
+      </div>
+      <div class="mx-5">
+        <img src="./img/header-mobile.png" class="img-fluid mt-2" alt="jeune fille avec des mots écrits au dessus de sa tête : douleurs, wc indapatés, honte, moqueries, angoisse, taches">
+      </div>
+    </header>
+
+    <div class="text-center my-5">
         <a class="bg-red pill-button text-white" href="https://regleselementaires.don-en-ligne.com/b/mon-don" target="_blank">Je fais un don</a>
     </div>
 
     <div class="container text-center fs-5">
+
+      <div class="text-purple font-chango text-center text-uppercase mt-5">
+        <span class="fs-40">Le constat</span>
+      </div>    
+
+      <div class="text-purple text-center mb-5">
+        <span class="fw-medium fs-24">L'enquête Règles Élémentaires X Opinion Way avril 2023<br/>“Les règles à l'école”</span>
+      </div>  
+
       <div class="row">
 
         <div class="col-md-6 px-3 d-flex flex-column">
 
-          <div class="d-flex mb-2">            
-            <img class="img-fluid z-3 position-absolute" src="./img/cahier.png" alt="cahier ouvert">
+          <div data-aos="flip-down" class="d-flex mb-2">            
+            <img class="img-fluid z-3 position-absolute d-none d-md-block" src="./img/cahier.png" alt="cahier ouvert">
             <div class="col-md-10 offset-md-2 bg-purple d-flex flex-column text-white my-rounded py-4 px-5">
-                <span class="font-chango big-number" data-aos="zoom-in">80%</span>
+                <span class="font-chango big-number">80%</span>
                 <span>des jeunes filles ont leurs premières règles <span class="fw-bold">avant 13 ans</span></span>                    
             </div>
           </div>
 
-          <div class="col-md-11 offset-md-1 mt-4 d-flex flex-column text-red border-red my-rounded py-4 px-5">
+          <div data-aos="flip-down" data-aos-delay="500" class="col-md-11 offset-md-1 mt-4 d-flex flex-column text-red border-red my-rounded py-4 px-5 mb-4 mb-md-0">
             <span>À cause de ces <span class="fw-bold">absences</span>, elles sont</span>
             <span class="font-chango big-number">1/4</span>
             <span>à déclarer que ça a freiné leur <span class="fw-bold">progression scolaire</span></span>
@@ -51,16 +92,16 @@
 
         <div class="col-md-6 px-3 d-flex flex-column">
 
-          <div class="col-md-12 border-purple d-flex flex-column text-purple my-rounded py-4 px-5 mb-2">
+          <div data-aos="flip-down" data-aos-delay="500" class="col-md-12 border-purple d-flex flex-column text-purple my-rounded py-4 px-5 mb-2">
             <span>Avoir ses règles à l'école est un facteur de</span>
-            <img class="mx-auto width-60" data-aos="flip-down" data-aos-delay="500" src="./img/stress.png" alt="stress">
+            <img class="mx-auto width-60" src="./img/stress.png" alt="stress">
             <span>pour <span class="font-chango big-number">80%</span> des jeunes filles</span>
           </div>
 
-          <div class="d-flex mt-4"> 
+          <div data-aos="flip-down" class="d-flex mt-4"> 
             <div class="d-flex flex-column">
-              <img class="img-fluid z-3 position-absolute" data-aos="fade-left" data-aos-delay="1000" src="./img/red-arrow.png" alt="flèche pointant vers la gauche">
-              <img class="img-fluid z-3 position-absolute" data-aos="fade-left" data-aos-delay="1500" style="margin-top: 6rem;" src="./img/purple-arrow.png" alt="flèche pointant vers le bas">
+              <img class="img-fluid z-3 position-absolute d-none d-md-block" src="./img/red-arrow.png" alt="flèche pointant vers la gauche">
+              <img class="img-fluid z-3 position-absolute d-none d-md-block" data-aos="fade-in" data-aos-delay="1500" style="margin-top: 6rem;" src="./img/purple-arrow.png" alt="flèche pointant vers le bas">
             </div>
             <div class="col-md-7 offset-md-3  bg-red d-flex flex-column text-white my-rounded py-4 px-5">
               <span class="font-chango big-number">53%</span>
@@ -73,85 +114,158 @@
 
       </div>
 
-      <div class="row mt-4">
+      <div data-aos="fade-in" class="row mt-4">
         <div class="col-md-8 offset-md-2 text-purple text-center">
           Parmi elles, <span class="font-chango big-number">68%</span> sont absentes plusieurs fois par an
         </div>
         <div class="col-md-2">
-          <img class="img-fluid" src="./img/reveil.png" alt="réveil">
+          <img class="img-fluid d-none d-md-block" src="./img/reveil.png" alt="réveil">
         </div>        
       </div>
 
-      <div class="text-center fs-5 mb-4">
+      <div class="text-center mb-4 mt-4 mt-md-0">
         <a class="bg-red pill-button text-white" href="" target="_blank">Je consulte l'étude complète</a>
       </div>
 
     </div>
 
-    <div class="mt-5 bg-light-purple bg-white-stain d-flex flex-wrap py-4">
-      <div class="col-md-5">
-        <div class="text-purple font-chango text-center lh-sm my-5">
-          <span class="fs-26">Alors concrètement,</span><br />
-          <span class="fs-40">on fait quoi ?</span>
-        </div>    
-        <div class="text-end">
-          <img src="./img/white-arrow.png" alt="flèche pointant vers la droite">
+    <div class="mt-5 bg-light-purple py-4">
+      <div class="text-purple font-chango text-center text-uppercase mt-3">
+        <span class="fs-40">La solution</span>
+      </div> 
+
+      <div class="text-purple text-center mb-5">
+        <span class="fw-medium fs-24">Il faut parler des règles et le faire <span class="border-bottom border-white border-4">tôt</span></span>
+      </div>  
+
+      <div class="col-10 col-md-8 mx-auto bg-purple text-white rounded-4 px-4 px-md-5 py-3 py-md-4 fs-20 position-relative z-3" style="margin-bottom:-150px;">
+        <p class="fw-semibold">Éducation menstruelle, <span class="fst-italic">définition</span></p>
+
+        <p>Pédagogie visant à diffuser un socle de connaissances et d'informations suffisant pour :</p>
+          
+        <ol>
+          <li>bien vivre ses règles à tout âge et quel que soit son vécu</li>
+          <li>prévenir les risques de précarité menstruelle</li>
+          <li>prévenir les maladies liées aux règles (endométriose, adénomyose, SOPK)</li>
+          <li>mettre fin aux tabous et aux discriminations liés aux règles</li>
+          <li>favoriser l'égalité active</li>
+        </ol>
+          
+      </div>
+    </div>
+
+    <div class="bg-purple-stain d-flex flex-wrap pb-4" style="padding-top:150px;">
+      <div class="col-10 mx-auto col-md-6">
+        <div class="col-md-10 offset-md-2 text-purple text-uppercase font-chango fs-40 lh-sm mt-3 mt-md-5">
+          Alors<br />concrètement,<br />on fait quoi ?
+        </div>   
+        <div class="col-md-10 offset-md-2 text-purple fs-24 fw-medium lh-sm mt-3">
+          Notre team sensibilisation va dans les écoles, collèges, lycée pour apporter de l'information, déconstruire les idées reçues, s'interroger sur les tabous, le tout en mixité parce que tout le monde est concerné.
+        </div>  
+        <div class="text-end d-none d-md-block">
+          <img src="./img/right-orange-arrow.png" alt="flèche pointant vers la droite">
         </div>       
-        <div class="text-white font-fuzzy fw-bold fs-1 rotate-5 text-center">
+        <div class="d-none d-md-block text-red font-fuzzy fw-bold fs-1 rotate-5 text-center" style="margin-top:-50px;">
           On sensibilise
         </div>
       </div>
-      <div class="col-md-7">
-        <img class="my-5" src="./img/atelier.png" alt="atelier de sensibilisation dans une classe de collège">
+      <div class="col-12 col-md-6">
+        <img class="my-2 my-md-5 img-fluid" src="./img/atelier.png" alt="atelier de sensibilisation dans une classe de collège">
       </div>
     </div>
 
-    <div class="bg-purple d-flex flex-wrap">
-      <div class="col-md-6" style="position:relative;padding-top:28.125%;width:49%;">
-        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/WNk5MqcEJtU?si=7plw3YlxPx2Y93NG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="d-flex flex-wrap overflow-hidden">
+      <div class="col-12 col-md-6">
+        <div class="video-container ms-auto">
+          <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/TWMYaBvCECs?si=uRaw2tuay43ggRas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>        
       </div>
-      <div class="col-md-6 d-flex flex-column justify-content-center">
-        <div class="text-white font-fuzzy fw-bold fs-1 rotate-2 text-center">
-          Découvrez<br/>comment
+      <div class="col-12 col-md-6 d-none d-md-flex flex-column justify-content-center">
+        <div class="text-red font-fuzzy fw-bold fs-1 rotate-2 text-center">
+          On vous emmène<br />en atelier
         </div>
-        <div class="text-start ms-4">
-          <img src="./img/left-white-arrow.png" alt="flèche pointant vers la gauche">
-        </div>    
+        <div class="text-start ms-4" style="margin-top:-100px;">
+          <img src="./img/left-orange-arrow.png" alt="flèche pointant vers la gauche">
+        </div>  
+        <div class="text-center">
+          <a class="bg-red pill-button text-white" href="https://www.regleselementaires.com/agir/ecole/#sensibiliser" target="_blank">Je veux organiser un atelier</a>
+        </div>  
       </div>
     </div>
 
-    <div class="text-center fs-5 my-5">
-      <a class="bg-red pill-button text-white" href="" target="_blank">Je veux organiser un atelier</a>
-    </div>
-
-    <div class="d-flex bg-red">
-      <div class="col-md-5 offset-md-2 d-flex flex-column pt-5 fs-5">
-        <div class="d-flex align-items-center">
-          <span class="font-chango text-yellow fs-96 me-5">1</span>
-          <span class="text-white">Avoir ses règles à l'école est source<br/>d'inégalités et de stress</span>
+    <div class="d-flex flex-wrap bg-red mt-3 mt-md-5">
+      <div class="col-12 col-md-6 offset-md-1 d-flex flex-column pt-3 pt-md-5 pb-5 pb-md-0 fs-20 px-4 px-md-0">
+        <div class="text-white text-center text-md-start font-chango text-uppercase mt-3">
+          <span class="fs-40">Ce qu'il faut retenir</span>
+        </div> 
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-start mt-3 mt-md-5">
+          <span class="font-chango text-yellow fs-40 me-md-4 text-start width-35">1</span>
+          <span class="text-white text-center text-md-start">Avoir ses règles à l'école est source<br/>d'<span class="fw-bold">inégalités</span> et de <span class="fw-bold">stress</span></span>
         </div>
-        <div class="d-flex align-items-center">
-          <span class="font-chango text-yellow fs-96 me-4">2</span>
-          <span class="text-white">Les règles surviennent de plus en plus tôt et<br/>les enseignements arrivent <span class="fw-bold">trop tard</span></span>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-start mt-3 mt-md-5">
+          <span class="font-chango text-yellow fs-40 me-md-4 text-start width-35">2</span>
+          <span class="text-white text-center text-md-start">Les règles surviennent de plus en plus tôt et<br/>les enseignements arrivent <span class="fw-bold">trop tard</span></span>
         </div>
       </div>
-      <div class="col-md-5 bg-yellow pt-5">
-        <img style="margin-left:-26%;" src="./img/fille.png" alt="jeune fille avec des mots écrits au dessus de sa tête : douleurs, wc indapatés, honte, moqueries, angoisse, taches">
+      <div class="col-12 col-md-5 bg-yellow pt-5 px-4 px-md-0 d-flex align-items-bottom">
+        <img class="img-fluid girl-img" src="./img/fille.png" alt="jeune fille avec des mots écrits au dessus de sa tête : douleurs, wc indapatés, honte, moqueries, angoisse, taches">
       </div>
     </div>
 
-    <div class="d-flex justify-content-center align-items-center my-5">
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center my-5">
       <div class="text-purple font-fuzzy fw-bold fs-1 rotate-5 text-center">
         Notre<br/>solution arrive<br/>très vite
       </div>
-      <img class="mx-5" style="width:120px;height:120px;" src="./img/right-purple-arrow.png" alt="flèche pointant vers la droite">
-      <img style="width:350px;height:200px;" src="./img/parlons-regles.png" alt="logo de la plateforme de sensibilisation Parlons règles">
+      <img class="mx-5 d-none d-md-block" style="width:120px;height:120px;" src="./img/right-purple-arrow.png" alt="flèche pointant vers la droite">
+      <img class="mt-3 mt-md-0" style="width:300px;height:160px;" src="./img/parlons-regles.png" alt="logo de la plateforme de sensibilisation Parlons règles">
+    </div>
+
+    <div class="bg-light-purple py-5">
+      <div class="col-10 mx-auto text-purple text-center font-chango text-uppercase">
+        <span class="fs-40">En attendant,<br/> quelques outils !</span>
+      </div> 
+      <div class="d-flex flex-wrap col-md-8 mx-auto mt-3 mt-md-5" style="margin-bottom:-180px;">
+        <div class="col-10 mx-auto col-md-4 px-2 mt-4 mt-md-0">
+          <a href="mailto:contact@regleselementaires.com" target="_blank" class="text-decoration-none">
+            <div class="rounded p-4 d-flex flex-column bg-white shadow">
+              <div class="fw-medium text-purple text-center">L'exposition “Sang Gêne”<br/>(sur demande par email)</div>
+              <div class="mx-auto mt-4">
+                <img class="img-fluid" src="./img/expo.png" alt="photo expo">
+              </div>
+            </div>
+          </a>          
+        </div>
+        <div class="col-10 mx-auto col-md-4 px-2 mt-4 mt-md-0">
+          <a href="https://doccollectes.blob.core.windows.net/11-octobre/Brochure - Parlons Règles à l'École.pdf" target="_blank" class="text-decoration-none">
+            <div class="rounded p-4 d-flex flex-column bg-white shadow">
+              <div class="fw-medium text-purple text-center">Brochure “Parlons<br/>Règles à l'école”</div>
+              <div class="mx-auto mt-4">
+                <img class="img-fluid" src="./img/brochure.png" alt="page de garde brochure">
+              </div>
+            </div>  
+          </a>        
+        </div>
+        <div class="col-10 mx-auto col-md-4 px-2 mt-4 mt-md-0">
+          <a href="https://doccollectes.blob.core.windows.net/11-octobre/Flyer ressources sur les règles.pdf" target="_blank" class="text-decoration-none">
+            <div class="rounded p-4 d-flex flex-column bg-white shadow">
+              <div class="fw-medium text-purple text-center">Flyer ressources<br/>sur les règles</div>
+              <div class="mx-auto mt-4">
+                <img class="img-fluid" src="./img/flyer.png" alt="page de garde flyer">
+              </div>
+            </div>
+          </a>          
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white" style="height:200px;">
+
     </div>
 
     <footer class="bg-pink text-red text-center py-2">
-      Un site by
+      <div class="mt-4">Un site by</div>
       <a href="https://www.regleselementaires.com/" target="_blank">
-        <img class="ms-3 col-md-2" src="./img/logo-re.png" alt="logo Règles Élémentaires" />
+        <img class="px-5 px-md-0 ms-0 ms-md-3 col-12 col-md-2 img-fluid" src="./img/logo-re.png" alt="logo Règles Élémentaires" />
       </a>      
     </footer>
 
