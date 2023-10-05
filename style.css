@@ -80,9 +80,11 @@ body {
 .pill-button {
   display: inline-block;
   border-radius: 100px;
-  padding: .5rem 2.5rem;
   text-decoration: none;
-  font-size: 26px;
+}
+
+.pill-button:hover {
+  background-color: #FFB800;
 }
 
 @media (min-width: 768px) {
@@ -117,6 +119,11 @@ body {
   .girl-img {
     margin-left: -26%;
   }
+
+  .pill-button {
+    padding: .5rem 2.5rem;
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -140,6 +147,11 @@ body {
     position:relative;
     padding-top:56.25%;
     width:100%;
+  }
+
+  .pill-button {
+    padding: .5rem 1.5rem;
+    font-size: 18px;
   }
 }
 
